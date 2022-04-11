@@ -140,10 +140,11 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 				case 'whitty':
-				tex = Paths.getSparrowAtlas('characters/WhittySprites', 'shared');
+				// WHITTY LMAO
+				tex = Paths.getSparrowAtlas('freddy/WhittySprites', 'shared');
 				frames = tex;
 				animation.addByPrefix('idle', 'idle', 24);
-				animation.addByPrefix('singUP', 'Sing Up', 24);
+				animation.addByPrefix('singUP', 'Sing Up, 24);
 				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
 				animation.addByPrefix('singDOWN', 'Sing Down', 24);
 				animation.addByPrefix('singLEFT', 'Sing Left', 24);
@@ -154,7 +155,41 @@ class Character extends FlxSprite
 				addOffset("singLEFT", -10, 10);
 				addOffset("singDOWN", 0, -30);
 
-				playAnim('idle');
+			playAnim('idle');
+			case 'whittycrazy':
+				// WHITTY LMAO
+				tex = Paths.getSparrowAtlas('freddy/WhittyCrazy', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Whitty idle dance', 24);
+				animation.addByPrefix('singUP', 'Whitty Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'whitty sing note right', 24);
+				animation.addByPrefix('singDOWN', 'Whitty Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Whitty Sing Note LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+			playAnim('idle');
+			case 'cloudman':
+				// WHY HE OHITE 
+				tex = Paths.getSparrowAtlas('freddy/WhittySprites', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'updingdong idle', 24);
+				animation.addByPrefix('singUP', 'Sing Up, 24);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+		playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
